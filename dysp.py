@@ -60,7 +60,7 @@ def get_weibo_hot_search():
         for item in resp.json()[:10]:
             detail_url = item['source_url']
             title = item['title']
-            content = f'- [{title}]>>>{detail_url}\n'
+            content = f'- [{title}]  >>>{detail_url}\n'
             contents.append(content)
             srt22=""
             for player in contents[:10]:
